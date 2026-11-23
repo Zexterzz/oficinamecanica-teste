@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rota 66 | Oficina Mecânica</title>
+
+  <!-- Fontes do Google: Oswald (títulos) e Inter (textos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Nosso CSS (estilos do site) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       NAVBAR
+       ========================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#inicio" class="logo"><span>R66</span> ROTA 66</a>
+
+      <button class="botao-menu" id="botao-menu" aria-label="Abrir menu">&#9776;</button>
+
+      <nav class="menu" id="menu">
+        <a href="#servicos">Serviços</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#galeria">Oficina</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO
+       ========================================== -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <span class="etiqueta">Oficina Mecânica · Desde 2009</span>
+      <h1>Seu carro<br>em <em>boas mãos</em></h1>
+      <p>Diagnóstico honesto, serviço rápido e garantia por escrito. Cuidamos do seu carro como se fosse o nosso.</p>
+
+      <div class="hero-botoes">
+        <!-- O link do WhatsApp é montado no script.js (lá você troca o número) -->
+        <a href="#" id="botao-whatsapp" target="_blank" class="botao">Pedir orçamento</a>
+        <a href="#servicos" class="botao botao-contorno">Ver serviços</a>
+      </div>
+
+      <div class="numeros">
+        <div><strong>15+</strong><span>anos de oficina</span></div>
+        <div><strong>8.000</strong><span>carros atendidos</span></div>
+        <div><strong>90 dias</strong><span>de garantia</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SERVIÇOS
+       ========================================== -->
+  <section id="servicos">
+    <div class="container">
+      <div class="aparecer">
+        <span class="etiqueta">O que fazemos</span>
+        <h2 class="titulo-secao">Nossos serviços</h2>
+      </div>
+
+      <div class="grade-servicos">
+        <article class="card-servico aparecer">
+          <span class="numero">01</span>
+          <h3>Revisão completa</h3>
+          <p>Checagem de mais de 40 itens para o seu carro rodar tranquilo e sem surpresas na estrada.</p>
+        </article>
+
+        <article class="card-servico aparecer">
+          <span class="numero">02</span>
+          <h3>Injeção eletrônica</h3>
+          <p>Scanner de última geração para achar o problema certo, sem trocar peça no chute.</p>
+        </article>
+
+        <article class="card-servico aparecer">
+          <span class="numero">03</span>
+          <h3>Troca de óleo</h3>
+          <p>Óleo e filtro adequados ao seu motor, com troca feita em menos de uma hora.</p>
+        </article>
+
+        <article class="card-servico aparecer">
+          <span class="numero">04</span>
+          <h3>Freios</h3>
+          <p>Pastilhas, discos e fluido. Sua segurança não pode esperar, por isso o serviço é prioridade.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DIFERENCIAIS
+       ========================================== -->
+  <section class="diferenciais" id="diferenciais">
+    <div class="container">
+      <div class="aparecer">
+        <span class="etiqueta">Por que a Rota 66?</span>
+        <h2 class="titulo-secao">Nosso compromisso</h2>
+      </div>
+
+      <div class="grade-diferenciais">
+        <div class="item-diferencial aparecer">
+          <h3>Transparência</h3>
+          <p>Você aprova o orçamento antes de qualquer serviço e vê as peças trocadas.</p>
+        </div>
+
+        <div class="item-diferencial aparecer">
+          <h3>Rapidez</h3>
+          <p>Prazo combinado e cumprido. A maioria dos serviços sai no mesmo dia.</p>
+        </div>
+
+        <div class="item-diferencial aparecer">
+          <h3>Garantia</h3>
+          <p>90 dias de garantia em peças e mão de obra, tudo registrado por escrito.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GALERIA (fotos da oficina)
+       Crie uma pasta chamada "imagens" ao lado do index.html
+       e coloque nela as fotos com os nomes abaixo
+       (ou troque o nome no src de cada foto).
+       Tamanho ideal: 1200 x 900 pixels (proporção 4:3).
+       ========================================== -->
+  <section id="galeria">
+    <div class="container">
+      <div class="aparecer">
+        <span class="etiqueta">Conheça o lugar</span>
+        <h2 class="titulo-secao">Nossa oficina</h2>
+      </div>
+
+      <div class="grade-galeria">
+        <figure class="foto aparecer">
+          <img src="imagens/fachada.jpg" alt="Fachada da oficina" loading="lazy">
+        </figure>
+
+        <figure class="foto aparecer">
+          <img src="imagens/elevador.jpg" alt="Carro no elevador" loading="lazy">
+        </figure>
+
+        <figure class="foto aparecer">
+          <img src="imagens/equipe.jpg" alt="Nossa equipe de mecânicos" loading="lazy">
+        </figure>
+
+        <figure class="foto aparecer">
+          <img src="imagens/scanner.jpg" alt="Diagnóstico com scanner" loading="lazy">
+        </figure>
+
+        <figure class="foto aparecer">
+          <img src="imagens/recepcao.jpg" alt="Recepção da oficina" loading="lazy">
+        </figure>
+
+        <figure class="foto aparecer">
+          <img src="imagens/ferramentas.jpg" alt="Ferramentas e equipamentos" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTATO
+       ========================================== -->
+  <section id="contato">
+    <div class="container">
+      <div class="aparecer">
+        <span class="etiqueta">Fale com a gente</span>
+        <h2 class="titulo-secao">Peça seu orçamento</h2>
+      </div>
+
+      <div class="grade-contato">
+
+        <!-- Dados fictícios da oficina -->
+        <ul class="dados-contato aparecer">
+          <li><strong>Endereço</strong>Av. das Oficinas, 660 – Centro, São Paulo/SP</li>
+          <li><strong>Telefone</strong>(11) 99999-0066</li>
+          <li><strong>E-mail</strong>contato@rota66.com.br</li>
+          <li><strong>Horário</strong>Seg a Sex, 8h às 18h · Sáb, 8h às 13h</li>
+        </ul>
+
+        <!-- Formulário: ao enviar, abre o WhatsApp com a mensagem pronta -->
+        <form id="formulario" class="aparecer">
+          <input type="text" id="nome" placeholder="Seu nome" required>
+          <textarea id="mensagem" placeholder="Conte qual problema o seu carro está tendo" required></textarea>
+          <button type="submit" class="botao">Enviar pedido</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       RODAPÉ
+       ========================================== -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Rota 66 Oficina Mecânica. Todos os direitos reservados.</p>
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Nosso JavaScript (fica no final para o HTML carregar primeiro) -->
+  <script src="script.js"></script>
+
+</body>
+</html>
